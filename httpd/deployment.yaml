@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lwm-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      colour: blue
+  template:
+    metadata:
+      labels:
+        colour: blue
+    spec:
+      containers:
+      - name: cont1
+        image: httpd
