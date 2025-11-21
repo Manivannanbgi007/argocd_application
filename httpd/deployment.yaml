@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: lwm-deployment
 spec:
-  replicas: 5
+  replicas: 10
   selector:
     matchLabels:
       colour: blue
