@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-world
 spec:
-  replicas: 4
+  replicas: 8
   selector:                      # ← REQUIRED
     matchLabels:
       app: hello-world
